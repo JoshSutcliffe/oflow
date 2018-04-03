@@ -18,6 +18,19 @@
 	margin: 0 auto;
 }
 
+/* about */
+.about__cont {
+	position: relative;
+}
+.about__img {
+	position: absolute;
+}
+.about__text {
+	text-align: center;
+	color: yellow;
+	position: absolute;
+}
+
 /* services */
 .services__logo {
 	margin: 0 auto;
@@ -26,20 +39,24 @@
 
 /* small */
 @media screen and (max-width: 767px) {
+	.banner {
+		align-items: center !important;
+	}
 	.banner__logo {
 		max-height: 420px;
-		align-items: center !important;
 	}
 }
 /* medium */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 768px) {
 	/* banner */
-	.banner__logo {
-		max-height: 475px;
+	.banner {
 		align-items: center !important;
 	}
+	.banner__logo {
+		max-height: 475px;
+	}
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) and (min-width: 992px) {
 	/* banner */
 	.banner__logo {
 		max-height: 250px;
