@@ -21,6 +21,10 @@
 /* about */
 .about__cont {
 	position: relative;
+	background-image: url("../../images/zenAf.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position-x: center;
 }
 .about__img {
 	position: absolute;
@@ -28,7 +32,9 @@
 .about__text {
 	text-align: center;
 	color: yellow;
-	position: absolute;
+}
+.about--100vh {
+	height: 100vh;
 }
 
 /* services */
@@ -39,11 +45,16 @@
 
 /* small */
 @media screen and (max-width: 767px) {
+	/* banner */
 	.banner {
 		align-items: center !important;
 	}
 	.banner__logo {
 		max-height: 420px;
+	}
+	/* about */
+	.about__text {
+		font-size: 20px;
 	}
 }
 /* medium */
@@ -54,6 +65,10 @@
 	}
 	.banner__logo {
 		max-height: 475px;
+	}
+	/* about */
+	.about__text {
+		font-size: 20px;
 	}
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
